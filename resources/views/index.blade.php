@@ -10,7 +10,7 @@
       <table class="table table_border_radius">
         <thead>
           <tr>
-            <th colspan="6">検索条件</th>
+            <th colspan="6">検索条件git</th>
           </tr>
         </thead>
         <tbody>

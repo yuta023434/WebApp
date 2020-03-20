@@ -15,6 +15,7 @@
 {{-- 商品情報入力フォーム --}}
  <form action="{{route('goods_add_view')}}" method="post">
  <input type="hidden" name="_token" value="{{csrf_token()}}">
+ 
   <table class="table table-hover">
   <tr>
     <th>商品番号</th>

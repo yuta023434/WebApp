@@ -13,7 +13,6 @@ class GoodsEditViewController extends BaseController
 
     public function __invoke()
     {
-        echo 'きてる<br>';
         return view('goods.edit.view');
     }
 }
