@@ -1,0 +1,55 @@
+/*************
+* 商品管理一覧
+**************/
+
+/*************
+*検索条件のスタイル
+*************/
+#contents_search{
+  margin:50px 0px 50px 0px;
+}
+
+/*************
+*テーブルの角丸
+*************/
+
+.table_border_radius {
+  border: 1px solid #aaa;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.table_border_radius thead th,
+.table_border_radius tbody th,
+.table_border_radius tbody td {
+  padding: .6em 3em;
+  border-bottom: 1px solid #aaa;
+}
+.table_border_radius tbody th {
+  background-color: #eee;
+}
+.table_border_radius thead th + th,
+.table_border_radius tbody td {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+.table_border_radius tbody tr:last-child th,
+.table_border_radius tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table_border_radius tfoot{
+  background-color:#fff;
+} 
+/*************
+*テーブルのフッター
+*************/
+
+.t_foot{
+  border-top: 1px solid #aaa !important;
+  background-color:#ffffff !important;
+  text-align:center;
+}
+
+
