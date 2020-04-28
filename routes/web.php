@@ -17,7 +17,7 @@
 Route::get('/', function () {
 	echo '成功';
 	
-    return view('index');
+    return view('welcome');
 });
 Route::get('/goods/add', 'Goods\GoodsAddController')->name('goods_add');              //新規登録
 Route::post('/goods/add/view', 'Goods\Add\GoodsAddViewController')->name('goods_add_view');     //登録確認
