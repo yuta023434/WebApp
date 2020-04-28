@@ -47,10 +47,10 @@ class GoodsController extends BaseController
         print_r($search_options);
         echo '</pre>';
         
-        exit;
-        // //商品情報一覧取得
-        // $goods_list = getGoodsList($search_options);
         
+        // //商品情報一覧取得
+         $goods_list = getGoodsList($search_options);
+        exit;
         return view('index',[
             'goods_list' => $goods_list
             ]);
