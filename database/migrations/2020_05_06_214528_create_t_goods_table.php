@@ -13,6 +13,11 @@ class CreateTGoodsTable extends Migration
      */
     public function up()
     {
+        if (Schema::hasTable('t_goods'))
+        {
+            return;
+        }
+
         Schema::create('t_goods', function (Blueprint $table) {
             $table->bigIncrements('id')->comment('主キー');
             $table->string('un_id',255)->comment('ユニークID');
