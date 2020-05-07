@@ -36,7 +36,8 @@ class CreateTGoodsTable extends Migration
         // });
 
         //テーブル更新
-        Schema::table('t_goods', function(Blueprint $table){
+        Schema::table('t_goods', function(Blueprint $table)
+        {
             $table->string('un_id',255)->after('id')->default(NULL)->collation('utf8mb4_unicode_ci')->comment('ユニークID');
         });
     }
