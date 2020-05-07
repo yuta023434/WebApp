@@ -28,10 +28,10 @@ class CreateTGoodsTable extends Migration
             $table->text('intro_txt')->collation('utf8mb4_unicode_ci')->comment('紹介文');
             $table->timestamp('up_date')->default(NULL)->comment('更新日時');
             $table->timestamp('ins_date')->default(NULL)->comment('追加日時');
-            $table->tinyInteger('disp_flg',1)->comment('表示フラグ');
-            $table->tinyInteger('delete_flg',1)->default('0')->comment('削除フラグ');
-            // $table->engine = 'InnoDB';
-            // $table->collation = 'utf8mb4_unicode_ci';
+            $table->tinyInteger('disp_flg')->unsigned()->comment('表示フラグ');
+            $table->tinyInteger('delete_flg')->unsigned()->default(0)->comment('削除フラグ');
+            $table->engine = 'InnoDB';
+            $table->collation = 'utf8mb4_unicode_ci';
         });
     }
 
