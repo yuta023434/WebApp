@@ -30,7 +30,7 @@ class CreateTGoodsTable extends Migration
             $table->timestamp('ins_date')->comment('追加日時');
             $table->tinyInteger('disp_flg',1)->comment('表示フラグ');
             $table->tinyInteger('delete_flg',1)->comment('削除フラグ');
-            $table->primary(['id']);
+            $table->primary('id');
         });
     }
 
