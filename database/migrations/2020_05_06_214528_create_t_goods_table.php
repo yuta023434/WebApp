@@ -19,7 +19,7 @@ class CreateTGoodsTable extends Migration
         }
 
         Schema::create('t_goods', function (Blueprint $table) {
-            $table->bigIncrements('id')->comment('主キー');
+            $table->increments('id')->comment('主キー');
             $table->string('un_id',255)->comment('ユニークID');
             $table->string('goods_number',255)->comment('商品番号');
             $table->string('goods_name',255)->comment('商品名');
