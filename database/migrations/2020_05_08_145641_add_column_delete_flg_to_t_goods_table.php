@@ -14,7 +14,7 @@ class AddColumnDeleteFlgToTGoodsTable extends Migration
     public function up()
     {
         Schema::table('t_goods', function (Blueprint $table) {
-            $table->tinyInteger('delete_flg',1)->comment('削除フラグ');
+            $table->tinyInteger('delete_flg',1)->default(0)->after('disp_flg')->comment('削除フラグ');
         });
     }
 

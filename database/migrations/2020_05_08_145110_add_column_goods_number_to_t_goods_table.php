@@ -14,7 +14,7 @@ class AddColumnGoodsNumberToTGoodsTable extends Migration
     public function up()
     {
         Schema::table('t_goods', function (Blueprint $table) {
-            $table->string('goods_number',255)->default(NULL)->collation('utf8mb4_unicode_ci')->comment('商品番号');
+            $table->string('goods_number',255)->after('un_id')->default(NULL)->collation('utf8mb4_unicode_ci')->comment('商品番号');
         });
     }
 

@@ -14,7 +14,7 @@ class AddColumnIntroTxtToTGoodsTable extends Migration
     public function up()
     {
         Schema::table('t_goods', function (Blueprint $table) {
-            $table->text('intro_txt')->collation('utf8mb4_unicode_ci')->comment('紹介文');
+            $table->text('intro_txt')->after('intro_txt')->collation('utf8mb4_unicode_ci')->comment('紹介文');
         });
     }
 
