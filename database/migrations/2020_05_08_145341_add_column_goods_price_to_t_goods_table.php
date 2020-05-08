@@ -14,7 +14,7 @@ class AddColumnGoodsPriceToTGoodsTable extends Migration
     public function up()
     {
         Schema::table('t_goods', function (Blueprint $table) {
-            $table->integer('goods_price',255)->default(0)->after('goods_name')->comment('商品価格');
+            $table->integer('goods_price',255)->after('goods_name')->comment('商品価格');
         });
     }
 
