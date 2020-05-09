@@ -14,7 +14,7 @@ class AddColumnDispFlgToTGoodsTable extends Migration
     public function up()
     {
         Schema::table('t_goods', function (Blueprint $table) {
-            $table->tinyInteger('disp_flg',1)->default(0)->after('ins_date')->comment('表示フラグ');
+            $table->tinyInteger('disp_flg',1)->after('ins_date')->comment('表示フラグ');
         });
     }
 
