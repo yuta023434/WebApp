@@ -14,7 +14,7 @@ class AddColumnInsDateToTGoodsTable extends Migration
     public function up()
     {
         Schema::table('t_goods', function (Blueprint $table) {
-            $table->timestamp('ins_date')->after('up_date')->comment('追加日時');//aaaa
+            $table->timestamp('ins_date')->comment('追加日時');
         });
     }
 
