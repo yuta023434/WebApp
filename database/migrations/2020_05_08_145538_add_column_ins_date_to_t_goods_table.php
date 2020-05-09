@@ -14,7 +14,7 @@ class AddColumnInsDateToTGoodsTable extends Migration
     public function up()
     {
         Schema::table('t_goods', function (Blueprint $table) {
-            $table->timestamp('ins_date')->default(DB::raw('CURRENT_TIMESTAMP'))->comment('追加日時');
+            $table->timestamp('ins_date')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'))->after('up_date')->comment('追加日時');
         });
     }
 
