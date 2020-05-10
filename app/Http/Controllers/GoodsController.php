@@ -15,16 +15,14 @@ class GoodsController extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function __invoke(GoodsRequest $request)
-    {  
-        echo 'goods_list';
-        
+    {     
         //検索オプションの作成
         $search_options = array(
             'goods_number' => $request->goods_number,
             'goods_id'   => $request->goods_id,
             'min_price'    => $request->min_price,
             'max_price'    => $request->max_price
-        ) ;
+        );
 
         //日付存在チェック
         if( $request->s_up_year != "" && $request->s_up_month != "" && $request->s_up_month != "" )
@@ -43,20 +41,12 @@ class GoodsController extends BaseController
         {
             $search_options['e_ins_date'] = $request->e_ins_year.'-'.$request->e_ins_month.'-'.$request->e_ins_day;
         }
-        echo '<pre>search_options';
-        print_r($search_options);
-        echo '</pre>';
         
-        
-        // //商品情報一覧取得
-         $goods_list = getGoodsList($search_options);
-         echo '<pre>goods_list';
-         print_r($goods_list);
-         echo '</pre>';
+        //商品情報一覧取得
+        $goods_list = getGoodsList($search_options);
          
-        
         return view('index',[
             'goods_list' => $goods_list
-            ]);
+        ]);
     }
 }
