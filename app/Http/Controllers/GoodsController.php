@@ -43,13 +43,17 @@ class GoodsController extends BaseController
         {
             $search_options['e_ins_date'] = $request->e_ins_year.'-'.$request->e_ins_month.'-'.$request->e_ins_day;
         }
-        echo '<pre>';
+        echo '<pre>search_options';
         print_r($search_options);
         echo '</pre>';
         
         
         // //商品情報一覧取得
          $goods_list = getGoodsList($search_options);
+         echo '<pre>goods_list';
+         print_r($goods_list);
+         echo '</pre>';
+         
         exit;
         return view('index',[
             'goods_list' => $goods_list
