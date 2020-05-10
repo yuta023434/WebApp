@@ -54,7 +54,7 @@ class GoodsController extends BaseController
          print_r($goods_list);
          echo '</pre>';
          
-        exit;
+        
         return view('index',[
             'goods_list' => $goods_list
             ]);
