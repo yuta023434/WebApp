@@ -8,21 +8,21 @@
   <title>@yield('title')</title>
 
   {{-- BootstrapベースCSSファイル --}}
-  <link href="{{('public/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   {{-- ページレイアウト関連テンプレートCSSファイル --}}
-  <link href="{{asset('public/css/modern-business.css')}}" rel="stylesheet">
+  <link href="{{asset('css/modern-business.css')}}" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
   {{-- カレンダーのCSSファイル --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css">
     
   {{-- 商品管理一覧 --}}
-  <link href="{{asset('public/css/goods.css')}}" rel="stylesheet">
+  <link href="{{asset('css/goods.css')}}" rel="stylesheet">
 
   {{-- jQueryベースライブラリ --}}
-  <script src="{{asset('public/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 
   {{-- カレンダーライブラリ --}}
   <script src="{{asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
