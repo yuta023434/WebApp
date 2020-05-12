@@ -13,7 +13,7 @@
   {{-- ページレイアウト関連テンプレートCSSファイル --}}
   <link href="{{asset('css/modern-business.css')}}" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ asset('../css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
   {{-- カレンダーのCSSファイル --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css">
