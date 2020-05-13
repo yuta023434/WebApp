@@ -8,12 +8,12 @@
   <title>@yield('title')</title>
 
   {{-- BootstrapベースCSSファイル --}}
-  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('../vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   {{-- ページレイアウト関連テンプレートCSSファイル --}}
-  <link href="{{asset('public/css/modern-business.css')}}" rel="stylesheet">
+  <link href="{{asset('css/modern-business.css')}}" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
   {{-- カレンダーのCSSファイル --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css">
