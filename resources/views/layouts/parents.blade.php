@@ -8,7 +8,8 @@
   <title>@yield('title')</title>
 
   {{-- BootstrapベースCSSファイル --}}
-  <link href="{{asset('../vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+ {{-- <link href="{{asset('../vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"> --}}
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
   {{-- ページレイアウト関連テンプレートCSSファイル --}}
   <link href="{{asset('css/modern-business.css')}}" rel="stylesheet">
