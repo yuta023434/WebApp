@@ -8,8 +8,8 @@
   <title>@yield('title')</title>
 
   {{-- BootstrapベースCSSファイル --}}
- {{-- <link href="{{asset('../vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"> --}}
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="{{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+ {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> --}}
 
   {{-- ページレイアウト関連テンプレートCSSファイル --}}
   <link href="{{asset('css/modern-business.css')}}" rel="stylesheet">
@@ -23,10 +23,10 @@
   <link href="{{asset('css/goods.css')}}" rel="stylesheet">
 
   {{-- jQueryベースライブラリ --}}
-  <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('jquery/jquery.min.js')}}"></script>
 
   {{-- カレンダーライブラリ --}}
-  <script src="{{asset('public/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <!-- Select2.css -->
@@ -74,7 +74,7 @@
     {{-- 指定したテキストボックスにカレンダー表示 --}}
     $("#s_up_date").datepicker
     ({
-      buttonImage: "{{asset('public/css/icon_calendar.png')}}",
+      buttonImage: "{{asset('css/icon_calendar.png')}}",
       buttonText: "カレンダーから選択",
       buttonImageOnly: true,
       showOn: "both",
@@ -98,7 +98,7 @@
 
     $("#e_up_date").datepicker
     ({
-      buttonImage: "{{asset('public/css/icon_calendar.png')}}",        
+      buttonImage: "{{asset('css/icon_calendar.png')}}",        
       buttonText: "カレンダーから選択", 
       buttonImageOnly: true,           
       showOn: "both",
@@ -122,7 +122,7 @@
 
     $("#s_ins_date").datepicker
     ({
-      buttonImage: "{{asset('public/css/icon_calendar.png')}}",        
+      buttonImage: "{{asset('css/icon_calendar.png')}}",        
       buttonText: "カレンダーから選択", 
       buttonImageOnly: true,           
       showOn: "both",
@@ -146,7 +146,7 @@
 
     $("#e_ins_date").datepicker
     ({
-      buttonImage: "{{asset('public/css/icon_calendar.png')}}",       
+      buttonImage: "{{asset('css/icon_calendar.png')}}",       
       buttonText: "カレンダーから選択", 
       buttonImageOnly: true,           
       showOn: "both",
