@@ -34,8 +34,7 @@ class GoodsAddDoController extends BaseController
             'up_date'       => now(), 
             'ins_date'      => now()
         ]);
-        echo 'insertはできてる';
-        exit; 
+        
         //商品追加ログ
         Log::channel('t_goods')->info(
             'page = goods_add_do'.
