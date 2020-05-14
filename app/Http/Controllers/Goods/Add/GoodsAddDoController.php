@@ -22,7 +22,8 @@ class GoodsAddDoController extends BaseController
         
         //新規商品情報追加
         $unid = uniqid(sprintf('%02x', random_int(0, 255)));
-
+        echo 'aaaaaきてる';
+        exit;
         DB::table('t_goods')->insert([
             'un_id'         => $unid,
             'goods_number'  => $request->goods_number,
